@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DreamAI 🎨
 
-## Getting Started
+A modern, free AI Image Generator built with **Next.js 16**, **Shadcn UI**, and **Stable Diffusion XL** (via Hugging Face).
 
-First, run the development server:
+## ✨ Features
 
+- **🤖 Text-to-Image:** Generate high-quality images using the SDXL model.
+- **🎲 Surprise Me:** Stuck for ideas? Click the refresh icon for a random, creative prompt.
+- **🎨 Style Presets:** Quickly apply styles like *Cyberpunk*, *Anime*, *3D Render*, and more with one click.
+- **💾 Download Art:** Save your generated masterpieces directly to your device.
+- **⚡ Modern UI:** Built with Shadcn UI, featuring gradients, loading states, and responsive design.
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Components:** Shadcn UI (Radix Primitives)
+- **AI Model:** Stable Diffusion XL (via Hugging Face Inference API)
+- **Icons:** Lucide React
+
+## 🚀 Getting Started Locally
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [https://github.com/Fivkas/dream-ai.git](https://github.com/Fivkas/dream-ai.git)
+cd dream-ai
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Setup Environment Variables
+Create a `.env.local` file in the root directory and add your Hugging Face Access Token:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+HUGGING_FACE_TOKEN=hf_your_token_here
+```
+*(You can get a free token from [Hugging Face Settings](https://huggingface.co/settings/tokens))*
 
-## Learn More
+### 4. Run the Development Server
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) with your browser to start creating art!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/actions`: Server Actions handling the API communication (hiding the API key).
+- `components/ui`: Shadcn UI components (Buttons, Inputs, Cards).
+- `app/page.tsx`: The main frontend logic and UI.
