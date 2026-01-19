@@ -56,3 +56,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to start c
 - `app/actions`: Server Actions handling the API communication (hiding the API key).
 - `components/ui`: Shadcn UI components (Buttons, Inputs, Cards).
 - `app/page.tsx`: The main frontend logic and UI.
+  
+<img width="1439" height="677" alt="Screenshot 2026-01-19 at 7 34 07 PM" src="https://github.com/user-attachments/assets/70e52070-cc49-446f-b844-249d50416fb2" />
+<img width="1436" height="679" alt="Screenshot 2026-01-19 at 7 34 35 PM" src="https://github.com/user-attachments/assets/7f2e0a18-e97f-43aa-aced-9ce2ae3e5e2b" />
