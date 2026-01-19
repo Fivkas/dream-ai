@@ -4,6 +4,8 @@ A modern, free AI Image Generator built with **Next.js 16**, **Shadcn UI**, and 
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://dream-ai-fivkas.vercel.app/)
 
+visit : https://dream-ai-fivkas.vercel.app/
+
 ## ✨ Features
 
 - **🤖 Text-to-Image:** Generate high-quality images using the SDXL model.
